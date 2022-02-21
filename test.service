@@ -1,0 +1,9 @@
+[Unit]
+Description=just for test
+After=systemd-networkd-wait-online.service
+
+[Service]
+ExecStart=/home/root/test.sh 192.168.30.48
+
+[Install]
+WantedBy=multi-user.target
